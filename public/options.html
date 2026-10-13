@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stock Metadata Pro AI — Extension Settings</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, sans-serif; }
+    body { margin: 0; background: #f5f7fb; color: #172033; }
+    main { max-width: 680px; margin: 48px auto; padding: 28px; background: white; border: 1px solid #dfe5ef; border-radius: 16px; box-shadow: 0 8px 30px #1c2c4a12; }
+    h1 { margin-top: 0; font-size: 24px; }
+    p { line-height: 1.5; color: #526078; }
+    label { display: block; margin: 22px 0 8px; font-weight: 700; }
+    input { box-sizing: border-box; width: 100%; padding: 12px; border: 1px solid #cbd5e1; border-radius: 9px; font-size: 15px; }
+    button { margin-top: 16px; padding: 11px 18px; border: 0; border-radius: 9px; background: #1d4ed8; color: white; font-weight: 700; cursor: pointer; }
+    #status { min-height: 24px; margin-top: 14px; color: #166534; }
+    code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Stock Metadata Pro AI — Extension Settings</h1>
+    <p>The extension contains the frontend. AI generation, user/key management, projects and server CSV endpoints require your deployed Stock Metadata Pro AI backend.</p>
+    <label for="backend">Backend origin (HTTPS)</label>
+    <input id="backend" type="url" placeholder="https://your-stock-metadata-api.vercel.app" autocomplete="url">
+    <p>Enter only the origin, without an API path. Example: <code>https://your-app.vercel.app</code></p>
+    <button id="save">Save backend URL</button>
+    <div id="status" role="status" aria-live="polite"></div>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

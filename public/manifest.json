@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Stock Metadata Pro AI",
+  "short_name": "Stock Metadata Pro",
+  "version": "1.0.0",
+  "description": "AI-powered stock metadata workflow with user-provided AI keys.",
+  "permissions": ["storage", "tabs"],
+  "host_permissions": ["https://*/*"],
+  "background": { "service_worker": "extension-background.js" },
+  "action": { "default_title": "Open Stock Metadata Pro AI" },
+  "options_page": "options.html"
+}
